@@ -1,0 +1,242 @@
+.App {
+  background-image: url('../images/background.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.App-logo {
+  width: 150px;
+  margin-left: 25px;
+  height: 150px;
+  flex-grow: 1;
+  max-width: 150px;
+}
+
+.App-logo img {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.App-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-y: hidden;
+  margin: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  background-color: rgba(21, 56, 157);
+  border-bottom: 3px solid rgb(134, 153, 207);
+}
+
+.App-header-menu {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+ /* color: #5F8D17;*/
+  /*width: calc(100vw - 200px);*/
+  flex-grow: 3;
+  min-width: 300px;
+  max-width: 600px;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  z-index: 1000;
+}
+
+.App-header-menu a {
+ color: white;
+ text-decoration: none;
+}
+.App-main {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 150px;
+}
+
+.App-main-window {
+  width: 100%;
+
+}
+
+.App-preview-page {
+  display: absolute;
+  display: none;
+}
+.App-link {
+  color: #61dafb;
+}
+	.Home-page .Page-header {
+		width: 100%;
+		height: 100%;
+	}
+	.Home-page {
+		margin-top: -50px;
+	}
+	.Home-page .Page-header .image{
+		background-image: url( '../images/home.jpg');
+		background-position: center;
+		margin-top: 0px;
+			width: 100%;
+			height: 100%;
+}
+	.Home-page .Page-header{
+		width: 100%;
+		height: 450px;
+	}
+
+	.App-content-body {
+		max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+    border: 3px solid rgb(134, 153, 207);
+  background-color:rgba(0,0,0,0.2);
+  height: 100%
+	}
+
+.cover-container, .login-container, .signup-container {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.cover-container .cover-image,
+.login-container .cover-image,
+.signup-container .cover-image {
+  background-image: url('../images/background2.jpg');
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 10001;
+}
+
+.cover-container .welcome {
+  width: 400px;
+}
+
+.login-container .login-box,
+.signup-container .signup-box {
+  width: 300px;
+}
+
+.cover-container .welcome,
+.login-container .login-box,
+.signup-container .signup-box {
+	position: absolute;
+  display: flex;
+	height: auto;
+	left: 50%;
+  right: 50%;
+  top: 50%;
+  flex-direction: column;
+  z-index: 10002;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: rgba(0,0,0,0.5);
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.cover-container .welcome .welcome-logo {
+  display: block;
+  max-width: 200px;
+  max-height: 353px;
+  width: auto;
+  height: auto;
+}
+.cover-container .welcome .title {
+	text-decoration: none;
+  font-family: titleFont;
+	color: white;
+	font-weight: bold;
+	font-size: 45px;
+}
+
+.cover-container .welcome .user-actions {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.login-container .login-box,
+.signup-container .signup-box {
+	padding: 0px 10px;
+}
+
+.login-container .login-box .login-title,
+.signup-container .signup-box .signup-title {
+	border-bottom: 1px solid white;
+  width: 100%;
+  padding: 0px 5px;
+  font-family: titleFont;
+}
+
+.cover-container .welcome .user-actions a {
+  color: white;
+}
+
+.login-form div,
+.signup-form div {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label,
+.login-form label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-form input,
+.signup-form input {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  font-size: 18px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+}
+
+.login-form button,
+.signup-form button {
+  align-self: flex-end;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  width: 75px;
+}
